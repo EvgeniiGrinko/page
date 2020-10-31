@@ -1,72 +1,63 @@
 html,
 body {
   height: 100%;
-  background-color: whitesmoke;
+  background-color: rgb(250, 250, 250);
 }
 
-body section {
-  font: 0.8125em/1.5 Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+body {
+  font: 14px/20px Helvetica;
 }
 
-img {
-  height: 250px;
-}
-
-header,
-nav,
-section,
-article,
-aside {
-  display: block;
-}
-a {
-  color: #267;
-  text-decoration: underline;
-}
-a:hover {
-  color: #722;
-}
-p {
-  margin: 0 0 1em;
-  text-align: justify;
-  text-shadow: whitesmoke;
-}
 header {
-  background-color: rgb(192, 241, 217);
-  border-radius: 10px;
-  padding: 0;
   margin: 0;
-  font-style: italic;
-}
-header h1 {
-  color: rgb(31, 14, 77);
-  text-shadow: 1px 1px #732372, 1px -1px #732372, -1px 1px #732372,
-    -1px -1px #5251b3, 3px 3px 6px rgba(0, 0, 0, 0.5);
-  font-size: 1.9em;
-  padding: 10px 10px;
-  text-align: center;
+  padding: 1px;
+  background-color: rgb(36, 42, 46);
 }
 
-section {
+section,
+nav,
+main,
+footer {
+  margin: 5px;
+  padding: 10px;
+  display: block;
+  color: black;
+}
+
+p {
+  margin: 10px;
+  padding: 5px;
+  text-align: justify;
+}
+
+header img {
+  width: 100px;
+}
+
+.contact-info {
   float: left;
+  margin-left: 15px;
   padding: 20px;
-  position: relative;
-  width: 40%;
-  text-align: left;
-  border: 1px solid #5695bb;
-  border-radius: 15px;
+  width: 45%;
+  box-shadow: 3px 3px 5px rgb(19, 14, 17);
+  border: 1px solid grey;
+  border-radius: 6px;
 }
-section p {
-  color: rgb(94, 51, 21);
-  font-style: italic;
+.contact-info h1 {
+  font-size: 1.3em;
+  background: linear-gradient(-45deg, #fee864, #f5965e);
+  color: #f4f4f4;
+  text-shadow: -1px -1px white, 1px 1px gray, 2px 2px #7a7a7a, 3px 3px #757575,
+    4px 4px #707070, 5px 5px #6b6b6b, 6px 6px #666666, 7px 7px #616161,
+    8px 8px #5c5c5c, 9px 9px #575757, 10px 10px #525252, 11px 11px #4d4d4d,
+    18px 18px 30px rgba(0, 0, 0, 0.4), 18px 18px 10px rgba(0, 0, 0, 0.4);
 }
-section article {
-  position: relative;
+
+.main-info {
+  display: block;
+  clear: both;
 }
-section header {
-  font-size: 1em;
-  padding: 0;
-}
+
 section h2 {
   font-size: 1.3em;
   color: azure;
@@ -79,19 +70,31 @@ section h2 {
 }
 aside {
   float: right;
-  padding: 20px 0 30px;
-  position: relative;
   width: 40%;
+  box-shadow: 3px 3px 5px rgb(120, 128, 128);
+  border-radius: 5px;
+  border: 1px solid rgb(10, 48, 10);
+  padding: 0;
 }
 
 figcaption {
   font-style: italic;
   width: 100;
 }
-
+img {
+  height: 100%;
+  width: 100%;
+}
 footer {
   clear: both;
   color: black;
-  padding: 10px 10px;
-  font-style: italic;
+  border: 1px solid grey;
+  border-radius: 1px;
+  padding: 1px;
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 6px;
+}
+footer ul li {
+  display: inline;
 }
