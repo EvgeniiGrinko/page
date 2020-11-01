@@ -85,15 +85,11 @@ img {
   height: 100%;
   width: 100%;
 }
+footer img {
+  width: 100px;
+}
 footer {
   clear: both;
-  color: black;
-  border: 1px solid grey;
-  border-radius: 1px;
-  padding: 1px;
-  background-color: white;
-  border: 1px solid grey;
-  border-radius: 6px;
 }
 footer ul li {
   display: inline;
