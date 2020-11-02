@@ -58,7 +58,7 @@ p {
   flex-shrink: 1;
 }
 .contact-info h1 {
-  font-size: 36px;
+  font: 36px/45px Helvetica;
   padding: 3px 10px 5px 25px;
   color: rgb(13, 37, 104);
   text-align: left;
@@ -110,6 +110,10 @@ aside {
 aside img {
   max-width: 400px;
   border-radius: 4px;
+}
+mark {
+  background-color: rgb(66, 201, 235);
+  color: rgb(41, 41, 24);
 }
 
 img {
