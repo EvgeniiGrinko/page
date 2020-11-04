@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Резюме: Гринько Евгений</title>
+    <title>Resume of Grinko Evgenii (Гринько Евгений)</title>
+    <meta name="description" content="Full resume of Frontend developer Grinko Evgenii open for new job perspectives and job offers, looking for a part time/full time/project/remote work in IT">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Grinko Evgenii">
 </head>
 <body>
     <header class="header">
@@ -19,26 +22,27 @@
             </ul>
         </nav>   
     </header>
-    <main>
-        <section class=flex-1>
-        <section id="contacts" class="contact-info">
-            <h1>Гринько Евгений Геннадьевич</h1>
+    <main itemscope itemtype="http://schema.org/Person">
+        <section class=flex-1 >
+        <section id="contacts" class="contact-info" >
+            <h1 itemprop="name">Гринько Евгений Геннадьевич</h1>
             <article> 
-                <p>Пол: муж</br>
+                <p itemprop="gender">Пол: муж</br>
                     Возраст: 30 лет</br>
-                    Дата рождения: 9 июля 1990</br></br>
-                    Телефон: +7 (903) 2547792</br>
-                    <a href="https://github.com/EvgeniiGrinko">Github account</a></br>
-                    <a href="mailto:jenek0907@mail.ru">E-mail</a></br></br>
-                    Проживаю: Москва, м. Зябликово, Красногвардейская</br>
-                    Гражданство: Россия</br>
+                    Дата рождения: <span itemprop="birthDate">9 июля 1990</span></br></br>
+                    Телефон: <span itemprop="telephone">+7 (903) 2547792</span></br>
+                    <a href="https://github.com/EvgeniiGrinko" itemprop="url">Github account</a></br>
+                    <a href="mailto:jenek0907@mail.ru" itemprop="email">E-mail</a></br></br>
+                    Проживаю: <span itemprop="homeLocation">Москва</span>, м. Зябликово, Красногвардейская <details><summary>click to show map</summary><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aec700f4af2097c6eadf4f20f5a85d559df8e560aa8a8c322172cc389ddda59e4&amp;source=constructor" width="500" height="281" frameborder="0"></iframe>
+                    </details></p>
+                    <p>Гражданство: <span itemprop="nationality">Россия</span></br>
                     Готов к командировкам, переезду 
                 </p>
             </article> 
         </section>
         <aside class="photo-aside">
             <figure>
-                <img src="img/20200825_164412-minified.jpg" alt="Evgenii Grinko 2020, Moscow, on roof of Central children's store">
+                <img src="img/20200825_164412-minified.jpg" itemprop="image" alt="Evgenii Grinko 2020, Moscow, on roof of Central children's store">
             <figcaption><time datetime="2020-08-25"> 25/08/2020 г.</time></figcaption>
             </figure>
         </aside>
@@ -46,7 +50,7 @@
         <section class="flex-2">
             <article id="position-salary"> 
                 <h2>Желаемая должность и зарплата</h2>
-                    <h3>Junior Javascript developer</h3>
+                    <h3 itemprop="hasOcuppation">Junior Javascript developer</h3>
                         <p>
                             Занятость: проектная работа, частичная занятость, полная занятость </br>
                             График работы: гибкий график, полный день</br>
@@ -58,7 +62,7 @@
                 <h2>Образование</h2>
                     <h3>Высшее</h3>
                         <p>
-                            ВУЗ: Российская таможенная академия</br>
+                            ВУЗ: <span itemprop="alumniOf">Российская таможенная академия</span></br>
                             Специальность: юриспруденция 
                         </p>
             </article>
@@ -66,20 +70,20 @@
                 <h2>Ключевые навыки</h2>
                     <h3>Знание языков </h3>
                         <p>
-                            Русский — Родной</br>
-                            Английский — B1, чтение технической литературы и книг на английском, разговорное общение.
+                            <span itemprop="knowsLanguage">Русский</span> — Родной</br>
+                            <span itemprop="knowsLanguage">Английский</span> — B1, чтение технической литературы и книг на английском, разговорное общение.
                         </p>
                     <h3>Технические навыки </h3>
                         <p>
-                            Имею твердые знания: JavaScript, HTML5, CSS3</br>
-                            Имею базовые знания следующих технологий: Node.js, React, Redux, Bootstrap, Express, SMTP, IMAP, jQuery, Git, Github, Docker, Gulp, MongoDB, NeDB, Nodemon, Webpack
+                            Имею твердые знания: <span itemprop="knowsAbout">JavaScript, HTML5, CSS3</span></br>
+                            Имею базовые знания следующих технологий: <span itemprop="knowsAbout">Node.js, React, Redux, Bootstrap, Express, SMTP, IMAP, jQuery, Git, Github, Docker, Gulp, MongoDB, NeDB, Nodemon, Webpack</span>
                         </p>
                     <h3>Soft skills </h3>
                         <p>Дружелюбие, отзывчивость, коммуникабельность, позитив, оптимизм, корректность, вежливость, умение работать в команде, самодисциплинированность и самоорганизованность</p>
             </article>
             <article id="professional-growing"> 
                 <h2>Мой путь освоения профессии Junior Javascript разработчик</h2>
-                    <p>
+                    <p itemprop="description">
                         1. В настоящее время занимаюсь разработкой pet project SportsStore web app, а именно изучаю по
                         книге Pro React 16 (by Adam Freeman). Ссылка на <a href="https://github.com/EvgeniiGrinko/sportsstore">repo</a>.</br>
                         Технологии: HTML, CSS, JS, Bootstrap, Node, React, Express.</br></br>
@@ -96,7 +100,7 @@
                         6. Примеры работ: <a href="https://evgeniigrinko.github.io/Snake">Snake</a>.</br>
                     </p>
             </article>
-            <article id="goals"> 
+            <article id="goals" itemprop="decription"> 
                     <h2>Цели</h2>
                         <h3>Развитие и вклад </h3>
                             <p>
