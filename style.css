@@ -116,6 +116,15 @@ aside img {
   max-width: 400px;
   border-radius: 4px;
 }
+aside img {
+  transition: all 0.5s ease-in-out;
+}
+
+aside img:hover {
+  width: 500px;
+  transform: rotate(555deg);
+}
+
 mark {
   background-color: rgb(66, 201, 235);
   color: rgb(41, 41, 24);
