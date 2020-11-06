@@ -108,31 +108,17 @@ section h2 {
 aside {
   padding: 0;
   text-align: center;
-  flex-basis: 40%;
+  flex-basis: 30%;
   flex-grow: 1;
   flex-shrink: 1;
 }
 aside img {
-  max-width: 400px;
-  border-radius: 4px;
-}
-aside img {
-  transition: all 0.5s ease-in-out;
-}
-
-aside img:hover {
-  width: 500px;
-  transform: rotate(555deg);
+  width: 95%;
 }
 
 mark {
   background-color: rgb(66, 201, 235);
   color: rgb(41, 41, 24);
-}
-
-img {
-  height: 100%;
-  width: 100%;
 }
 
 .header-title a {
@@ -144,4 +130,49 @@ img {
 footer {
   display: flex;
   justify-content: center;
+}
+#figaudio1 {
+  text-align: center;
+  padding: 26px;
+  background: white;
+  margin: 0 11px 0px 0;
+  border: solid 1px #888888;
+  border-radius: 8px;
+}
+
+#figcptionaudio1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8em;
+  padding: 6px 8px;
+  background: #dddddd;
+  text-align: center;
+  font-family: georgia, serif;
+  font-style: italic;
+  border-radius: 7px;
+}
+
+#figaudio1 > img {
+  background: #eeeeee;
+  padding: 5px;
+  border: solid 1px #444444;
+}
+
+/* For audio and img transitions/animation */
+audio,
+#figaudio1 > img {
+  transition: all 0.5s;
+}
+
+#figaudio1 > img:hover {
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+}
+
+audio:hover,
+audio:focus,
+audio:active {
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
 }
